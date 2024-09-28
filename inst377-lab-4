@@ -1,75 +1,91 @@
-
-html
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> Birhanu's Profile Page </title> 
-        <style>
-            h1 {background-color: #e87a87;
-            }
-        </style>
-    </head>
+<html lang="en">
+<head>
 
-    <body> 
-        <h1> Hello there! My name is Birhanu👋</h1>
-        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INST377 - Lab 4</title>
+    <style>
+        body {
+            background-color: rgb(104, 244, 72);
+            font-family: Arial, sans-serif;
+        }
 
-        <h1> Education:</h2>
-        <blockquote> 
-            <p> I completed my associate degree in Montgomery college, Rockville Campus, and I am currently a senior student in UMD majoring in Information Science</p>
+        h1 {
+            text-align: center;
+        }
 
-        </blockquote>
-        <style>
-            h2 {background-color: #8b7ae8;
-            }
-        </style>
-        <h2> Degree Details:</h3>
-            <ul> 
-                <li> Degree Level: Associate Degree🎓</li>
-                <li> Obtained year: 2022</li>
-            
-    </ul>
-                <li> Degree Level: B.S Degree</li>
-                <li> Obtain year: 2025 😊</li>
-                <h3> My Field of Interest </h3>
-                <ol>
-                    <li> Information Science</li>
-                    <li> Data Science</li>
-                    <li> Cyber Security</li>
-                </ol>
-                <style>
-                    h3 {background-color: hsl(124, 71%, 69%);
-                    }
-                </style>
-                <h3> My Profile Picture:</h3> 
-                <img src="c:\Users\12025\OneDrive\Documents\Pictures\Camera Roll\20191113_162820.jpg" width ="100" heigt ="50">
-                <h3> My Education Details:</h3>
-                <table border="1">
-                    <tr> 
-                    <th> Degree</th>
-                    <th> Year</th>
-                </tr>
-            <tr>
-                    <td> Associate</td>
-                    <td> 2022</td>
-                </tr>
-                <tr> 
-                    <td> B.S Degree </td>
-                    <td> 2025😊</td>
-                </tr>
-                </table>
-                <p> For more information, plese visit <a href="http:www.umd.edu/"> University of Maryland, College Park </a></p>
+        .section {
+            display: inline-block;
+            width: 250px;
+            margin: 5px;
+            padding: 5px;
+            background-color: rgb(231, 151, 39);
+            border: 2px solid #4755f8;
+            color: rgb(191, 20, 20);
+            text-align: center;
+        }
+
+        button {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="heading">INST377 - Lab 4</h1>
+    <div class="section">
+        <form id="alertForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <button type="button" onclick="alertName()">Alert Me!</button>
+        </form>
+    </div>
+
     
+    <div class="section">
+        <button onclick="changeColor()">Change Color</button>
+    </div>
 
-    </body>
+    <br>
+    <div class="section">
+        <form id="textTesterForm">
+            <label for="textTester">Text Tester:</label>
+            <input type="text" id="textTester">
+            <button type="button" onclick="validateText()">Validate Text</button>
+        </form>
+    </div>
+    <div class="section">
+        <button onclick="addText()">Add Text</button>
+    </div>
+    <script>
+        function alertName() {
+            const name = document.getElementById('name').value;
+            if (name) {
+                alert(`Hi ${name}!`);
+            }
+        }
+
+        let isBlue = true;
+        function changeColor() {
+            document.body.style.backgroundColor = isBlue ?'orange' : 'blue';
+            isBlue = !isBlue;
+        }
+
+        function validateText() {
+            const text = document.getElementById('textTester').value;
+            const validation = /[!@#$%^&*()_+\-=\\[\\]{};':"\\|,.<>\/?]+/;
+            if (validation.test(text)) {
+                alert('Text contains special characters!');
+            } else {
+                alert('Text is valid!');
+            }
+        }
+
+        function addText() {
+            const heading = document.getElementById('heading');
+            heading.textContent += ' Add Text';
+        }
+    </script>
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
