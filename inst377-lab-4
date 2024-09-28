@@ -1,0 +1,75 @@
+
+html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Birhanu's Profile Page </title> 
+        <style>
+            h1 {background-color: #e87a87;
+            }
+        </style>
+    </head>
+
+    <body> 
+        <h1> Hello there! My name is Birhanu👋</h1>
+        
+
+        <h1> Education:</h2>
+        <blockquote> 
+            <p> I completed my associate degree in Montgomery college, Rockville Campus, and I am currently a senior student in UMD majoring in Information Science</p>
+
+        </blockquote>
+        <style>
+            h2 {background-color: #8b7ae8;
+            }
+        </style>
+        <h2> Degree Details:</h3>
+            <ul> 
+                <li> Degree Level: Associate Degree🎓</li>
+                <li> Obtained year: 2022</li>
+            
+    </ul>
+                <li> Degree Level: B.S Degree</li>
+                <li> Obtain year: 2025 😊</li>
+                <h3> My Field of Interest </h3>
+                <ol>
+                    <li> Information Science</li>
+                    <li> Data Science</li>
+                    <li> Cyber Security</li>
+                </ol>
+                <style>
+                    h3 {background-color: hsl(124, 71%, 69%);
+                    }
+                </style>
+                <h3> My Profile Picture:</h3> 
+                <img src="c:\Users\12025\OneDrive\Documents\Pictures\Camera Roll\20191113_162820.jpg" width ="100" heigt ="50">
+                <h3> My Education Details:</h3>
+                <table border="1">
+                    <tr> 
+                    <th> Degree</th>
+                    <th> Year</th>
+                </tr>
+            <tr>
+                    <td> Associate</td>
+                    <td> 2022</td>
+                </tr>
+                <tr> 
+                    <td> B.S Degree </td>
+                    <td> 2025😊</td>
+                </tr>
+                </table>
+                <p> For more information, plese visit <a href="http:www.umd.edu/"> University of Maryland, College Park </a></p>
+    
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
